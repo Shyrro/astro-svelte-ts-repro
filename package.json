@@ -1,0 +1,7 @@
+{
+  "name": "astro-svelte-root",
+  "version": "0.0.0",
+  "scripts": {
+    "astro:dev": "pnpm --filter=\"astro-app\" dev"
+  }
+}
