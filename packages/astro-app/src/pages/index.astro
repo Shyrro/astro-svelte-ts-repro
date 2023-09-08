@@ -21,7 +21,7 @@ import {
     <h1>Astro</h1>
     <Test variant="test3" open={"true"} /> <!-- Weird inference, everything is inferred to string -->
     <Dialog open={"true"}  /> <!-- No linter error, breaks build -->
-    <TabGroup defaultIndex={"1"} > <!-- Linter error, doesn't break build -->
+    <TabGroup defaultIndex={"1"} orientation={"anything but the type"}> <!-- Linter error, doesn't break build -->
 
     </TabGroup>
   </body>
