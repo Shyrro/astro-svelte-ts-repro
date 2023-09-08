@@ -1,11 +1,12 @@
 ---
 import { Test } from "svelte-lib";
 import {
-    Dialog,
-    DialogOverlay,
-    DialogTitle,
-    DialogDescription,
-  } from "@rgossiaux/svelte-headlessui";
+  Dialog,
+  DialogOverlay,
+  DialogTitle,
+  DialogDescription,
+  TabGroup
+} from "@rgossiaux/svelte-headlessui";
 ---
 
 <html lang="en">
@@ -18,9 +19,10 @@ import {
   </head>
   <body>
     <h1>Astro</h1>
-		<Test variant="test3" open={"true"}></Test>
-    <Dialog open={true}>
+    <Test variant="test3" open={"true"} /> <!-- Weird inference, everything is inferred to string -->
+    <Dialog open={"true"}  /> <!-- No linter error, breaks build -->
+    <TabGroup defaultIndex={"1"} > <!-- Linter error, doesn't break build -->
 
-    </Dialog>
+    </TabGroup>
   </body>
 </html>

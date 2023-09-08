@@ -2,6 +2,9 @@
   "name": "astro-svelte-root",
   "version": "0.0.0",
   "scripts": {
-    "astro:dev": "pnpm --filter=\"astro-app\" dev"
+    "astro:dev": "pnpm --filter=\"astro-app\" dev",
+    "build:lib": "pnpm --filter=\"svelte-lib\" build",
+    "build:app": "pnpm --filter=\"astro-app\" build",
+    "build": "pnpm build:lib && pnpm build:app"
   }
 }
