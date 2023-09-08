@@ -10,8 +10,9 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^3.0.10",
     "@astrojs/svelte": "latest",
+    "@rgossiaux/svelte-headlessui": "^2.0.0",
+    "astro": "^3.0.10",
     "svelte": "^4.2.0",
     "svelte-lib": "workspace:*"
   }

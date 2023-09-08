@@ -2,6 +2,7 @@ import { SvelteComponent } from "svelte";
 declare const __propDef: {
     props: {
         variant?: ("test1" | "test2" | "test3") | undefined;
+        open?: boolean | undefined;
     };
     events: {
         [evt: string]: CustomEvent<any>;

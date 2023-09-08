@@ -13,6 +13,9 @@ importers:
       '@astrojs/svelte':
         specifier: latest
         version: 4.0.1(astro@3.0.10)(svelte@4.2.0)(typescript@5.2.2)(vite@4.4.9)
+      '@rgossiaux/svelte-headlessui':
+        specifier: ^2.0.0
+        version: 2.0.0(svelte@4.2.0)
       astro:
         specifier: ^3.0.10
         version: 3.0.10
@@ -764,6 +767,14 @@ packages:
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.15.0
+    dev: false
+
+  /@rgossiaux/svelte-headlessui@2.0.0(svelte@4.2.0):
+    resolution: {integrity: sha512-ksh245HqMM8yqkzd/OyAK2FCHZYOSA3ldLIHab7C9S60FmifqT24JFVgi8tZpsDEMk3plbfQvfah93n5IEi8sg==}
+    peerDependencies:
+      svelte: ^3.47.0
+    dependencies:
+      svelte: 4.2.0
     dev: false
 
   /@sveltejs/package@2.2.2(svelte@4.2.0)(typescript@5.2.2):

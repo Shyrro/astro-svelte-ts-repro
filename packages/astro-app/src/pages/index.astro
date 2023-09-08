@@ -1,5 +1,11 @@
 ---
 import { Test } from "svelte-lib";
+import {
+    Dialog,
+    DialogOverlay,
+    DialogTitle,
+    DialogDescription,
+  } from "@rgossiaux/svelte-headlessui";
 ---
 
 <html lang="en">
@@ -12,6 +18,9 @@ import { Test } from "svelte-lib";
   </head>
   <body>
     <h1>Astro</h1>
-		<Test variant="test3"></Test>
+		<Test variant="test3" open={"true"}></Test>
+    <Dialog open={true}>
+
+    </Dialog>
   </body>
 </html>
